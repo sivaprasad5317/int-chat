@@ -197,15 +197,15 @@ var nuanceData = {
 <!--Chat Event Notification-->
 <script type="text/javascript">
 
-    function isC2CbuttonDisplayed(evt) {
-        console.log('*** C2C Displayed has happened :: ' + evt.bizRuleName + ' ***');
-        console.log(evt);
-    }
+    // function isC2CbuttonDisplayed(evt) {
+    //     console.log('*** C2C Displayed has happened :: ' + evt.bizRuleName + ' ***');
+    //     console.log(evt);
+    // }
 
-    function isC2CButtonClicked(evt) {
-        console.log('*** C2C button has been clicked :: ' + evt.bizRuleName + ' ***');
-        console.log(evt);
-    }
+    // function isC2CButtonClicked(evt) {
+    //     console.log('*** C2C button has been clicked :: ' + evt.bizRuleName + ' ***');
+    //     console.log(evt);
+    // }
 
     // function isProactiveOverLayDisplayed(evt) {
     //     console.log('*** chat window shown :: ***');
@@ -217,41 +217,41 @@ var nuanceData = {
     //     console.log(evt);
     // }
 
-    function hasOnChatEngaged(evt) {
-        console.log('*** Chat has now engaged :: ' + evt.bizRuleName + ' ***');
-        console.log(evt);
-    }
+    // function hasOnChatEngaged(evt) {
+    //     console.log('*** Chat has now engaged :: ' + evt.bizRuleName + ' ***');
+    //     console.log(evt);
+    // }
 
-    function isChatClosed(evt) {
-        console.log('*** Chat window has now closed :: ' + evt.bizRuleName + ' ***');
-        console.log(evt);
-    }
+    // function isChatClosed(evt) {
+    //     console.log('*** Chat window has now closed :: ' + evt.bizRuleName + ' ***');
+    //     console.log(evt);
+    // }
 
-    var chatLaunchedListener = {
-        onChatLaunched: isProactiveOverLayDisplayed
-    };
+    // var chatLaunchedListener = {
+    //     onChatLaunched: isProactiveOverLayDisplayed
+    // };
 
-    var c2cDisplayed = {
-        onC2CDisplayed: isC2CbuttonDisplayed
-    };
+    // var c2cDisplayed = {
+    //     onC2CDisplayed: isC2CbuttonDisplayed
+    // };
 
-    var c2cClickedListener = {
-        onC2CClicked: isC2CButtonClicked
-    };
+    // var c2cClickedListener = {
+    //     onC2CClicked: isC2CButtonClicked
+    // };
 
-    var chatEngagedListener = {
-        onChatEngagedEvent: hasOnChatEngaged
-    };
+    // var chatEngagedListener = {
+    //     onChatEngagedEvent: hasOnChatEngaged
+    // };
 
-    var chatClosedListener = {
-        onChatClosed: isChatClosed
-    };
+    // var chatClosedListener = {
+    //     onChatClosed: isChatClosed
+    // };
 
-    var InqRegistry = {
-        chatListeners: [chatLaunchedListener, chatClosedListener],
-        listeners: [c2cDisplayed, c2cClickedListener],
-        saleListeners: [chatEngagedListener]
-    };
+    // var InqRegistry = {
+    //     chatListeners: [chatLaunchedListener, chatClosedListener],
+    //     listeners: [c2cDisplayed, c2cClickedListener],
+    //     saleListeners: [chatEngagedListener]
+    // };
 
 </script>
 </body>
